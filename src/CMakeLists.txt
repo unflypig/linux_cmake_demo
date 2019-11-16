@@ -10,7 +10,7 @@ aux_source_directory(./hi HI_SRC_LISTS)
 aux_source_directory(./hello HELLO_SRC_LISTS)
 aux_source_directory(./ MAIN_HELLO_SRC_LISTS)
 #库文件路径
-link_directories(${ROOT_PATH}/lib)
+link_directories(${PROJECT_SOURCE_DIR}/lib)
 #要生成的可执行文件名及其依赖的源文件
 add_executable(${BIN_NAME} ${MAIN_HELLO_SRC_LISTS} ${HI_SRC_LISTS} ${HELLO_SRC_LISTS})
 #要生成的可执行文件名及其依赖的库文件

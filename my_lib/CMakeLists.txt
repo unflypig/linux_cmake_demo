@@ -9,4 +9,4 @@ add_library(mylib_shared SHARED ${MY_LIB_SRC})
 set_target_properties(mylib_static PROPERTIES OUTPUT_NAME "mylib")
 set_target_properties(mylib_shared PROPERTIES OUTPUT_NAME "mylib")
 #设置库文件输出的路径PROJECT_SOURCE_DIR为项目根目录
-set(LIBRARY_OUTPUT_PATH ${ROOT_PATH}/lib)
+set(LIBRARY_OUTPUT_PATH ../../lib)
