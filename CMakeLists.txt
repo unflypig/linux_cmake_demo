@@ -1,4 +1,7 @@
 #cmake 最小版本要求
+IF(BUILD_TYPE STREQUAL "Debug")
+    ADD_DEFINITIONS(-DDEBUG)
+ENDIF()
 cmake_minimum_required(VERSION 2.8)
 #项目名称
 project(linux-cmake)

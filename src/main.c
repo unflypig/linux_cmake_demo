@@ -14,6 +14,9 @@
 #include "hello.h"
 #include "nihao.h"
 int main(int argc, char* argv[]){
+#ifdef DEBUG
+    printf("This is a debug info only show in debug mode!\n");
+#endif
     hi();
     hello();
     nihao();
